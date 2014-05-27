@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="987c6772-d43d-4387-bb78-bbbaa0c4c91b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/foundation.css" afterPath="$PROJECT_DIR$/css/foundation.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ini.php" afterPath="$PROJECT_DIR$/ini.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,7 +29,7 @@
       <file leaf-file-name="ini.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ini.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="20" selection-start="589" selection-end="589" vertical-scroll-proportion="0.5226481" vertical-offset="0" max-vertical-offset="574">
+            <state line="50" column="64" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.7297297" vertical-offset="270" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -127,8 +126,8 @@
         <option value="$PROJECT_DIR$/includes/config.php" />
         <option value="$PROJECT_DIR$/includes/header.php" />
         <option value="$PROJECT_DIR$/includes/bd.php" />
-        <option value="$PROJECT_DIR$/ini.php" />
         <option value="$PROJECT_DIR$/css/foundation.css" />
+        <option value="$PROJECT_DIR$/ini.php" />
       </list>
     </option>
   </component>
@@ -137,7 +136,7 @@
     <option name="x" value="-1366" />
     <option name="y" value="22" />
     <option name="width" value="1366" />
-    <option name="height" value="746" />
+    <option name="height" value="727" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -277,14 +276,22 @@
       <created>1401230887520</created>
       <updated>1401230887520</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Cambios en el formulario y CSS">
+      <created>1401231338687</created>
+      <updated>1401231338687</updated>
+    </task>
+    <task id="LOCAL-00006" summary="completando formulario">
+      <created>1401234235675</created>
+      <updated>1401234235675</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1366" y="22" width="1366" height="746" extended-state="6" />
+    <frame x="-1366" y="22" width="1366" height="727" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -295,7 +302,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23333333" sideWeight="0.6705107" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -316,7 +323,9 @@
     <MESSAGE value="Agregando el esqueleto del proyecto :-P" />
     <MESSAGE value="Agregando conexion a base de datos .. revise mi teacher!" />
     <MESSAGE value="Cambios y formulario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios y formulario" />
+    <MESSAGE value="Cambios en el formulario y CSS" />
+    <MESSAGE value="completando formulario" />
+    <option name="LAST_COMMIT_MESSAGE" value="completando formulario" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -380,7 +389,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ini.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="589" selection-end="589" vertical-scroll-proportion="0.5226481" vertical-offset="0" max-vertical-offset="574">
+        <state line="50" column="64" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.7297297" vertical-offset="270" max-vertical-offset="900">
           <folding />
         </state>
       </provider>

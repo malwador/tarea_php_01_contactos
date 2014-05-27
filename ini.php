@@ -48,7 +48,7 @@ echo '<p><h1>Tarea PHP 01 - Gestión de contactos</h1></p>';
                     <option value="RAAS">RAAS</option>
                 </select>
             </label>
-            <button type="submit" value="Agregar">
+            <button type="submit" value="Agregar" name="Agregar">
         </div>
     </div>
 
