@@ -19,7 +19,10 @@ echo '<p><h1>Tarea PHP 01 - Gestión de contactos</h1></p>';
     <div class="row">
         <div class="large-12 columns">
             <label>Nombres
-                <input type="text" placeholder="large-12.columns" />
+                <input type="text" placeholder="Escriba sólo sus nombres" />
+            </label>
+            <label>
+                <input type="text" placeholder="Escriba sus apellidos" />
             </label>
         </div>
     </div>
