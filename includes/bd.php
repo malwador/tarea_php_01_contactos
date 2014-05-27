@@ -7,10 +7,10 @@
  */
 
 // datos generales de conexion
-$server_bd = localhost;
-$user_bd = tarea_php;
-$pass_bd = 123456;
-$schema_db = tarea01;
+$server_bd = "localhost";
+$user_bd = "tarea_php";
+$pass_bd = "123456";
+$schema_db = "tarea01";
 
 
 // vamos a intentar conectarnos

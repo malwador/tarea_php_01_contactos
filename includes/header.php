@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-    <title>Anunciator - Un script para anuncios en línea</title>
+    <title><?php echo $tile_web . ' - ' . $title_hw; ?></title>
 
 
     <!--    Seccion de los stylesheets-->
@@ -27,7 +27,7 @@
         <nav class="top-bar" data-topbar>
             <ul class="title-area">
                 <li class="name">
-                    <h1><a href="#">Anunciator</a></h1>
+                    <h1><a href="#"><?php echo $title_hw;?></a></h1>
                 </li>
                 <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
                 <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -37,28 +37,8 @@
                 <!-- Right Nav Section -->
                 <ul class="right">
                     <li class="active"><a href="#">Inicio</a></li>
-                    <li class="has-dropdown"><a href="#">Información General</a>
-                        <ul class="dropdown">
-                            <li><a href="#">Que es Anunciator?</a></li>
-                         <!--   <li><a href="#">Ejemplos de Uso</a></li>
-                            <li><a href="#">Documentación</a></li>
-                            <li><a href="#">Descargar</a></li>-->
-                        </ul>
-                    </li>
-                    <li><a href="#">Contacto</a></li>
-                    <li class="has-form">
-                        <a href="#" class="button">Donar</a>
-                    </li>
-                    <li class="has-form">
-                        <div class="row collapse">
-                            <div class="large-8 small-9 columns">
-                                <input type="text" placeholder="Find Stuff">
-                            </div>
-                            <div class="large-4 small-3 columns">
-                                <a href="#" class="alert button expand">Search</a>
-                            </div>
-                        </div>
-                    </li>
+                    <li><a href="#">Listado</a></li>
+                    <li><a href="#">Agregar contactos</a></li>
                 </ul>
 
             </section>

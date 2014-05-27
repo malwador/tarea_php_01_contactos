@@ -12,9 +12,20 @@ require 'includes/config.php';
 // insertamos encabezado
 require 'includes/header.php';
 
-echo '<p><h1>Soy Anunciator y tu quien eres?</h1></p>';
+echo '<p><h1>Tarea PHP 01 - Gestión de contactos</h1></p>';
+
+?>
+<form>
+    <div class="row">
+        <div class="large-12 columns">
+            <label>Nombres
+                <input type="text" placeholder="large-12.columns" />
+            </label>
+        </div>
+    </div>
 
 
+<?php
 // insertamos pie de pagina
 require 'includes/footer.php';
 
