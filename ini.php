@@ -56,4 +56,4 @@ echo '<p><h1>Tarea PHP 01 - Gestión de contactos</h1></p>';
 <?php
 // insertamos pie de pagina
 require 'includes/footer.php';
-// bayardo sanchez
+// bayardo
