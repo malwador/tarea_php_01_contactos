@@ -8,7 +8,7 @@
 
 // datos generales de conexion
 $server_bd = "localhost";
-$user_bd = "tarea_php";
+$user_bd = "tareas_php";
 $pass_bd = "123456";
 $schema_db = "tarea01";
 

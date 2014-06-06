@@ -10,7 +10,7 @@
 require 'includes/config.php';
 
 // lamando scripts externos
-require_one 'vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 // llamando clases para validacion
 require 'classes/ManejadorErrores.php';
@@ -31,9 +31,11 @@ if (!empty($_POST))
 // insertamos encabezado
 require 'includes/header.php';
 
-echo '<p><h1>Tarea PHP 01 - Gestión de contactos</h1></p>';
-
 ?>
+
+<p><h1>Tarea PHP 01 - Gestión de contactos</h1></p>
+
+
 <form action="ini.php" method="get">
     <div class="row">
         <div class="large-12 columns">
