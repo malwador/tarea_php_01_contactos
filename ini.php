@@ -15,7 +15,7 @@ require 'includes/header.php';
 echo '<p><h1>Tarea PHP 01 - Gestión de contactos</h1></p>';
 
 ?>
-<form action="ini.php?a=add" method="get">
+<form action="ini.php" method="get">
     <div class="row">
         <div class="large-12 columns">
             <label>Nombres
