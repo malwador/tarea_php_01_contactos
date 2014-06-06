@@ -20,7 +20,9 @@ if (!empty($_POST))
 
     $validador = new Validador($manejandorErrores);
 
-    $validacion = $validator->check($_POST, []);
+    $validacion = $validator->check($_POST, [
+
+    ]);
 }
 
 // insertamos encabezado
