@@ -1,27 +1,13 @@
 <?php
 /**
+ * Created by PhpStorm.
  * User: salvador
  * Date: 4/25/14
  * Time: 4:36 PM
  */
 
-
-
 // llamamos configuraciones generales
 require 'includes/config.php';
-
-require_once 'classes/ManejadorErrores.php';
-require_once 'classes/Validador.php';
-
-$manejadorErrores = new ManejadorErrores;
-
-if (!empty($_POST))
-{
-    $validador = new Validador ($manejadorErrores);
-
-    $validacion = $validador->revisar
-
-}
 
 // insertamos encabezado
 require 'includes/header.php';
@@ -29,7 +15,7 @@ require 'includes/header.php';
 echo '<p><h1>Tarea PHP 01 - Gestión de contactos</h1></p>';
 
 ?>
-<form action="ini.php?a=add" method="post">
+<form action="ini.php?a=add" method="get">
     <div class="row">
         <div class="large-12 columns">
             <label>Nombres
