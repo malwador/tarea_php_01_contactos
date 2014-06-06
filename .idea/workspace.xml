@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="987c6772-d43d-4387-bb78-bbbaa0c4c91b" name="Default" comment="hola como estas">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/email.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+    <list default="true" id="987c6772-d43d-4387-bb78-bbbaa0c4c91b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/bd.php" afterPath="$PROJECT_DIR$/includes/bd.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ini.php" afterPath="$PROJECT_DIR$/ini.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ini.php" afterPath="$PROJECT_DIR$/vendor/ini.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tarea_php_01_contactos.iws" />
@@ -62,7 +52,7 @@
       <file leaf-file-name="bd.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/bd.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="18" selection-start="200" selection-end="200" vertical-scroll-proportion="0.14450867" vertical-offset="0" max-vertical-offset="519">
+            <state line="12" column="24" selection-start="249" selection-end="249" vertical-scroll-proportion="0.20231214" vertical-offset="0" max-vertical-offset="519">
               <folding />
             </state>
           </provider>
@@ -368,7 +358,11 @@
       <created>1402092525552</created>
       <updated>1402092525553</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="trabajando con el phpmailer y agregando mysqli">
+      <created>1402097304887</created>
+      <updated>1402097304887</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -387,7 +381,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24554294" sideWeight="0.6705107" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24554294" sideWeight="0.6705107" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -419,7 +413,8 @@
     <MESSAGE value="componiendo las clases y el index" />
     <MESSAGE value="agregando un espacio segun video" />
     <MESSAGE value="Agregando composer &amp; phpmailer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregando composer &amp; phpmailer" />
+    <MESSAGE value="trabajando con el phpmailer y agregando mysqli" />
+    <option name="LAST_COMMIT_MESSAGE" value="trabajando con el phpmailer y agregando mysqli" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -551,7 +546,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/bd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="200" selection-end="200" vertical-scroll-proportion="0.14450867" vertical-offset="0" max-vertical-offset="519">
+        <state line="12" column="24" selection-start="249" selection-end="249" vertical-scroll-proportion="0.20231214" vertical-offset="0" max-vertical-offset="519">
           <folding />
         </state>
       </provider>

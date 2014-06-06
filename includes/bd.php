@@ -8,9 +8,9 @@
 
 // datos generales de conexion
 $server_bd = "localhost";
-$user_bd = "tareas_php";
+$user_bd = "sal_php";
 $pass_bd = "123456";
-$schema_db = "tarea01";
+$schema_db = "tareas_php";
 
 
 // vamos a intentar conectarnos
