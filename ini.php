@@ -9,6 +9,9 @@
 // llamamos configuraciones generales
 require 'includes/config.php';
 
+// lamando scripts externos
+require_one 'vendor/autoload.php';
+
 // llamando clases para validacion
 require 'classes/ManejadorErrores.php';
 require 'classes/Validador.php';
