@@ -7,6 +7,7 @@
 
 class Validador
 {
+    protected $manejadorErrores;
     public function __construct(ManejadorErrores $manejadorErrores)
     {
         $this->manejadorErrores = $manejadorErrores;

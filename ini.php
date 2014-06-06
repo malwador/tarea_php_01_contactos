@@ -9,6 +9,20 @@
 // llamamos configuraciones generales
 require 'includes/config.php';
 
+// llamando clases para validacion
+require 'classes/ManejadorErrores.php';
+require 'classes/Validador.php';
+
+$manejandorErrores = new ManejadorErrores;
+
+if (!empty($_POST))
+{
+
+    $validador = new Validador($manejandorErrores);
+
+    $validacion = $validator->check($_POST, []);
+}
+
 // insertamos encabezado
 require 'includes/header.php';
 
