@@ -12,9 +12,15 @@ require 'includes/config.php';
 // lamando scripts externos
 require_once 'vendor/autoload.php';
 
+// llamando base de datos & seguridad
+require_once 'includes/bd.php';
+require_once 'includes/security_bd.php';
+
 // llamando clases para validacion
 require 'classes/ManejadorErrores.php';
 require 'classes/Validador.php';
+
+
 
 $manejandorErrores = new ManejadorErrores;
 
@@ -31,12 +37,46 @@ if (!empty($_POST))
 // insertamos encabezado
 require 'includes/header.php';
 
+//if($resultado = $connect_db->query("select * from personas") or die($connect_db->error)) {
+//
+//    if($count = $resultado->num_rows) {
+//
+//        echo '<p>' . $count . '</p>';
+//
+////        $rows = $resultado->fetch_all(MYSQL_ASSOC);
+//
+//        while ($row = $resultado->fetch_object()){
+//            echo $row->nombres . ' ' . $row->apellidos . ' de ' . $row->departamento . '<BR>    ';
+//
+//
+//
+//        }
+//    }
+//$resultado->free();
+//}
+
+
+
+//print_r($resultado);
+
+if(isset($_GET['nombres'])){
+    $nombres = trim($_GET['nombres']);
+
+    $people = $conectar_bd->prepare("SELECT nombres, apellidos FROM personas WHERE nombres = ?");
+    $people->bind_param('s',$nombres);
+    $people->execute();
+
+    print_r($people);
+}
+
+
 ?>
 
-<p><h1>Tarea PHP 01 - Gestión de contactos</h1></p>
+<h1>Tarea PHP 01 - Gestión de contactos</h1>
 
 
-<form action="ini.php" method="get">
+
+<form action="ini.php" method="post">
     <div class="row">
         <div class="large-12 columns">
             <label>Nombres
@@ -73,9 +113,15 @@ require 'includes/header.php';
         </div>
     </div>
 
-
 <?php
+
+//if($insert = $connect_db->query("
+//        INSERT INTO personas (nombres, apellidos, genero, departamento, comentarios, fecha_creacion)
+//        VALUES ({$_GET['nombres']},$_GET[apellidos],$_GET[genero],$_GET[departamento],$_GET[comentarios],NOW())
+//")){
+//    echo $connect_db->affected_rows;
+//
+//}
 // insertamos pie de pagina
-require 'includes/footer.php';
-// bayardo
-// salvador aguilar
+    die();
+require_once 'includes/footer.php';

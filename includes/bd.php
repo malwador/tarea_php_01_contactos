@@ -6,6 +6,8 @@
  * Aqui vamos a listar la información de la base de datos
  */
 
+//error_reporting(0);
+
 // datos generales de conexion
 $server_bd = "localhost";
 $user_bd = "sal_php";
@@ -13,8 +15,12 @@ $pass_bd = "123456";
 $schema_db = "tareas_php";
 
 
+
 // vamos a intentar conectarnos
 $connect_db = new mysqli($server_bd,$user_bd,$pass_bd,$schema_db);
+
+//echo $connect_db->connect_errno;
+
     if ($connect_db->connect_errno) {
-        echo "Mierda! Algo salió mal con la base de datos: (" . $connect_db->connect_errno . ") " . $connect_db->connect_error;
+        die ('Mierda! Algo salio mal con la base de datos: ' . $connect_db->connect_errno );
     }
