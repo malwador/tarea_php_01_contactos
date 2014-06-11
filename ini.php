@@ -6,6 +6,8 @@
  * Time: 4:36 PM
  */
 
+error_reporting(E_ALL);
+
 // llamamos configuraciones generales
 require 'includes/config.php';
 
@@ -86,7 +88,7 @@ var_dump($lista_personas);
                 <div class="large-2 columns"><?php echo $p['genero'] ?></div>
                 <div class="large-2 columns"><?php echo $p['departamento'] ?></div>
                 <div class="large-2 columns"><?php echo $p['comentarios'] ?></div>
-                <div class="large-2 columns"><?php echo $p['fecha_creacion'] ?></div>
+                <div class="large-2 columns"><?php echo $p[fecha_creacion'] ?></div>
             </div>
         <?php
 
