@@ -1,6 +1,7 @@
 {
     "require": {
-        "phpmailer/phpmailer": "dev-master"
+        "phpmailer/phpmailer": "dev-master",
+        "illuminate/database": "4.2.2"
     }
 
 }

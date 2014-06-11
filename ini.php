@@ -33,12 +33,15 @@ if (!empty($_POST))
         $genero =       trim($_POST['genero']);
         $departamento = trim($_POST['departamento']);
 
-        if (!empty($nombres) && !empty($apellidos) && !empty($genero) && !empty($departamento)){
+        if (!empty($nombres) /*&& !empty($apellidos) && !empty($genero) && !empty($departamento)*/){
 
-            $insertar = $connect_db->prepare("INSERT INTO personas (nombres, apellidos, genero, departamento, fecha_creacion) VALUES (?, ?, ?, ?, NOW())");
+            $insertar = $connect_db->prepare("INSERT INTO personas (nombres, apellidos, genero, departamento) VALUES (?, ?, ?, ?)");
 
             var_dump($connect_db->connect_error);
             var_dump($insertar);
+            var_dump(get_class_methods($insertar));
+
+            die();
 
             $insertar->bind_param("ssss", $nombres, $apellidos, $genero, $departamento);
 

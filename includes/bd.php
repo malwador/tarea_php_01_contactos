@@ -21,6 +21,7 @@ $connect_db = new mysqli($server_bd,$user_bd,$pass_bd,$schema_db);
 
 //echo $connect_db->connect_errno;
 
-    if ($connect_db->connect_errno) {
-        die ('Mierda! Algo salio mal con la base de datos: ' . $connect_db->connect_errno );
+    if (mysqli_connect_errno()) {
+        die ('Mierda! Algo salio mal con la base de datos: ' . mysqli_connect_error() );
+        exit();
     }
