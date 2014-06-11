@@ -41,7 +41,7 @@ if (!empty($_POST))
 
         }
     }
-
+}
 // insertamos encabezado
 require 'includes/header.php';
 
