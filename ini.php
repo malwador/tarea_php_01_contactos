@@ -48,7 +48,7 @@ require 'includes/header.php';
 
 $lista_personas = Capsule::table('personas')->get();
 
-var_dump($lista_personas);
+//var_dump($lista_personas);
 
 ?>
 
