@@ -15,7 +15,8 @@ require 'includes/config.php';
 require_once 'vendor/autoload.php';
 
 // llamando base de datos & seguridad
-//require_once 'includes/bd.php';
+require_once 'includes/bd.php';
+
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 require_once 'includes/security_bd.php';
