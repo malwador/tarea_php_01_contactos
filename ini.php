@@ -25,10 +25,10 @@ if (!empty($_POST))
 {
     if (isset($_POST['nombres'], $_POST['apellidos'],$_POST['genero'],$_POST['departamento'])){
 
-        $nombres =      trim($_POST['nombres']);
-        $apellidos =    trim($_POST['apellidos']);
-        $genero =       trim($_POST['genero']);
-        $departamento = trim($_POST['departamento']);
+        $nombres =      escape($_POST['nombres']);
+        $apellidos =    escape($_POST['apellidos']);
+        $genero =       escape($_POST['genero']);
+        $departamento = escape($_POST['departamento']);
 
         if (!empty($nombres) && !empty($apellidos) && !empty($genero) && !empty($departamento)){
 
@@ -42,14 +42,6 @@ if (!empty($_POST))
         }
     }
 
-
-//    $validador = new Validador($manejandorErrores);
-//
-//    $validacion = $validator->check($_POST, [
-//
-//    ]);
-}
-
 // insertamos encabezado
 require 'includes/header.php';
 
@@ -57,8 +49,6 @@ require 'includes/header.php';
 $lista_personas = Capsule::table('personas')->get();
 
 var_dump($lista_personas);
-
-//echo '<pre>', print_r($lista_personas), '</pre>';
 
 ?>
 

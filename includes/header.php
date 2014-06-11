@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-    <title><?php echo $tile_web . ' - ' . $title_hw; ?></title>
+    <title><?php echo $title_web . ' - ' . $title_hw; ?></title>
 
 
     <!--    Seccion de los stylesheets-->
