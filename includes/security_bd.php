@@ -7,5 +7,5 @@
  */
 
 function escape($string) {
-    return HTML_ENTITIES(trim($string), ENT_QUOTES, 'UTF-8');
+    return htmlentities(trim($string), ENT_QUOTES, 'UTF-8');
 }
