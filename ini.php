@@ -13,16 +13,10 @@ require 'includes/config.php';
 require_once 'vendor/autoload.php';
 
 // llamando base de datos & seguridad
-require_once 'includes/bd.php';
-require_once 'includes/security_bd.php';
+//require_once 'includes/bd.php';
+use Illuminate\Database\Capsule\Manager as Capsule;
 
-//// llamando clases para validacion
-//require 'classes/ManejadorErrores.php';
-//require 'classes/Validador.php';
-//
-//
-//
-//$manejandorErrores = new ManejadorErrores;
+require_once 'includes/security_bd.php';
 
 if (!empty($_POST))
 {
@@ -33,22 +27,15 @@ if (!empty($_POST))
         $genero =       trim($_POST['genero']);
         $departamento = trim($_POST['departamento']);
 
-        if (!empty($nombres) /*&& !empty($apellidos) && !empty($genero) && !empty($departamento)*/){
+        if (!empty($nombres) && !empty($apellidos) && !empty($genero) && !empty($departamento)){
 
-            $insertar = $connect_db->prepare("INSERT INTO personas (nombres, apellidos, genero, departamento) VALUES (?, ?, ?, ?)");
+            Capsule::table('personas')->insert(
+                array('nombres' => $nombres,
+                    'apellidos' => $apellidos,
+                    'genero' => $genero,
+                    'departamento' => $departamento)
+            );
 
-            var_dump($connect_db->connect_error);
-            var_dump($insertar);
-            var_dump(get_class_methods($insertar));
-
-            die();
-
-            $insertar->bind_param("ssss", $nombres, $apellidos, $genero, $departamento);
-
-            if($insertar->execute()){
-                header('Location: ini.php');
-                die();
-            }
         }
     }
 
@@ -63,49 +50,12 @@ if (!empty($_POST))
 // insertamos encabezado
 require 'includes/header.php';
 
-//if($resultado = $connect_db->query("select * from personas") or die($connect_db->error)) {
-//
-//    if($count = $resultado->num_rows) {
-//
-//        echo '<p>' . $count . '</p>';
-//
-////        $rows = $resultado->fetch_all(MYSQL_ASSOC);
-//
-//        while ($row = $resultado->fetch_object()){
-//            echo $row->nombres . ' ' . $row->apellidos . ' de ' . $row->departamento . '<BR>    ';
-//
-//
-//
-//        }
-//    }
-//$resultado->free();
-//}
 
+$lista_personas = Capsule::table('personas')->get();
 
+var_dump($lista_personas);
 
-//print_r($resultado);
-
-//if(isset($_GET['nombres'])){
-//    $nombres = trim($_GET['nombres']);
-//
-//    $people = $conectar_bd->prepare("SELECT nombres, apellidos FROM personas WHERE nombres = ?");
-//    $people->bind_param('s',$nombres);
-//    $people->execute();
-//
-//    print_r($people);
-//}
-
-$lista_personas = array();
-
-if($resultado = $connect_db->query("SELECT * FROM personas")){
-    if($resultado->num_rows){
-        while($row = $resultado->fetch_object()){
-            $lista_personas[] = $row;
-        }
-    $resultado->free();
-    }
-}
-echo '<pre>', print_r($lista_personas), '</pre>';
+//echo '<pre>', print_r($lista_personas), '</pre>';
 
 ?>
 
@@ -131,12 +81,12 @@ echo '<pre>', print_r($lista_personas), '</pre>';
 
             ?>
             <div class="row">
-                <div class="large-2 columns"><?php echo escape($p->nombres) ?></div>
-                <div class="large-2 columns"><?php echo escape($p->apellidos) ?></div>
-                <div class="large-2 columns"><?php echo escape($p->genero) ?></div>
-                <div class="large-2 columns"><?php echo escape($p->departamento) ?></div>
-                <div class="large-2 columns"><?php echo escape($p->comentarios) ?></div>
-                <div class="large-2 columns"><?php echo escape($p->fecha_creacion) ?></div>
+                <div class="large-2 columns"><?php echo $p['nombres'] ?></div>
+                <div class="large-2 columns"><?php echo $p['apellidos'] ?></div>
+                <div class="large-2 columns"><?php echo $p['genero'] ?></div>
+                <div class="large-2 columns"><?php echo $p['departamento'] ?></div>
+                <div class="large-2 columns"><?php echo $p['comentarios'] ?></div>
+                <div class="large-2 columns"><?php echo $p['fecha_creacion'] ?></div>
             </div>
         <?php
 
@@ -183,14 +133,4 @@ echo '<pre>', print_r($lista_personas), '</pre>';
     </div>
 
 <?php
-
-//if($insert = $connect_db->query("
-//        INSERT INTO personas (nombres, apellidos, genero, departamento, comentarios, fecha_creacion)
-//        VALUES ({$_GET['nombres']},$_GET[apellidos],$_GET[genero],$_GET[departamento],$_GET[comentarios],NOW())
-//")){
-//    echo $connect_db->affected_rows;
-//
-//}
-// insertamos pie de pagina
-    die();
 require_once 'includes/footer.php';

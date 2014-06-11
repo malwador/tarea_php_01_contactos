@@ -2,6 +2,10 @@
     "require": {
         "phpmailer/phpmailer": "dev-master",
         "illuminate/database": "4.2.2"
+    },
+    "autoload": {
+        "files": [
+            "includes/bd.php"
+       ]
     }
-
 }

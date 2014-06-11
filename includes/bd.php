@@ -9,19 +9,22 @@
 //error_reporting(0);
 
 // datos generales de conexion
-$server_bd = "localhost";
-$user_bd = "sal_php";
-$pass_bd = "123456";
-$schema_db = "tareas_php";
+require_once 'vendor/autoload.php';
+
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+$capsule = new Capsule;
+
+$capsule->addConnection([
+    'driver'    => 'mysql',
+    'host'      => 'localhost',
+    'database'  => 'tareas_php',
+    'username'  => 'sal_php',
+    'password'  => '123456',
+    'charset'   => 'utf8',
+    'collation' => 'utf8_unicode_ci',
+    'prefix'    => '',
+]);
+$capsule->setAsGlobal();
 
 
-
-// vamos a intentar conectarnos
-$connect_db = new mysqli($server_bd,$user_bd,$pass_bd,$schema_db);
-
-//echo $connect_db->connect_errno;
-
-    if (mysqli_connect_errno()) {
-        die ('Mierda! Algo salio mal con la base de datos: ' . mysqli_connect_error() );
-        exit();
-    }
