@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="987c6772-d43d-4387-bb78-bbbaa0c4c91b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/header.php" afterPath="$PROJECT_DIR$/includes/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ini.php" afterPath="$PROJECT_DIR$/ini.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tarea_php_01_contactos.iws" />
@@ -30,7 +28,7 @@
       <file leaf-file-name="ini.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ini.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="0" selection-start="3515" selection-end="3515" vertical-scroll-proportion="0.4827586" vertical-offset="1399" max-vertical-offset="2280">
+            <state line="116" column="0" selection-start="3515" selection-end="3515" vertical-scroll-proportion="0.5" vertical-offset="1399" max-vertical-offset="2280">
               <folding>
                 <marker date="1402531572000" expanded="true" signature="2550:5045" placeholder="..." />
                 <marker date="1402531572000" expanded="true" signature="2550:5045" placeholder="..." />
@@ -176,7 +174,7 @@
     <option name="x" value="-1366" />
     <option name="y" value="22" />
     <option name="width" value="1366" />
-    <option name="height" value="746" />
+    <option name="height" value="727" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -491,11 +489,15 @@
       <created>1402531368233</created>
       <updated>1402531368233</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="cambiando fontawesome a local">
+      <created>1402531624889</created>
+      <updated>1402531624889</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1366" y="22" width="1366" height="746" extended-state="6" />
+    <frame x="-1366" y="22" width="1366" height="727" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -527,7 +529,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Agregando conexion a base de datos .. revise mi teacher!" />
     <MESSAGE value="Cambios y formulario" />
     <MESSAGE value="Cambios en el formulario y CSS" />
     <MESSAGE value="completando formulario" />
@@ -552,7 +553,8 @@
     <MESSAGE value="agregnado un } para cerrar un if" />
     <MESSAGE value="Quitando el var_dump de los arreglos de base de datos" />
     <MESSAGE value="agregando fontawesome como css y agregando icons en el formulario" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregando fontawesome como css y agregando icons en el formulario" />
+    <MESSAGE value="cambiando fontawesome a local" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambiando fontawesome a local" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -671,7 +673,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ini.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="0" selection-start="3515" selection-end="3515" vertical-scroll-proportion="0.4827586" vertical-offset="1399" max-vertical-offset="2280">
+        <state line="116" column="0" selection-start="3515" selection-end="3515" vertical-scroll-proportion="0.5" vertical-offset="1399" max-vertical-offset="2280">
           <folding>
             <marker date="1402531572000" expanded="true" signature="2550:5045" placeholder="..." />
             <marker date="1402531572000" expanded="true" signature="2550:5045" placeholder="..." />
