@@ -91,34 +91,54 @@ $lista_personas = Capsule::table('personas')->get();
 <form action="ini.php" method="post" data-abide>
 
     <div class="row collapse">
-        <div class="small-3 large-2 columns">
+        <div class="small-2 large-1 columns">
             <span class="prefix">Nombres&nbsp;&nbsp;</span>
 
         </div>
-        <div class="small-9 large-8 columns">
+        <div class="small-10 large-6 columns">
             <input type="text" placeholder="Escriba sólo sus nombres" name="nombres" id="nombres" required pattern="[a-zA-Z]+"/>
         </div>
-        <div class="large-2 columns">&nbsp;</div>
+        <div class="large-5 columns">&nbsp;</div>
     </div>
 
     <div class="row collapse">
-        <div class="small-3 large-2 columns">
+        <div class="small-2 large-1 columns">
             <span class="prefix">Apellidos</span>
         </div>
-        <div class="small-9 large-8 columns">
+        <div class="small-10 large-6 columns">
             <input type="text" placeholder="Escriba sus apellidos" name="apellidos" id="apellidos" required pattern="[a-zA-Z]+"/>
         </div>
-        <div class="large-2 columns">&nbsp;</div>
+        <div class="large-5 columns">&nbsp;</div>
     </div>
 
     <div class="row collapse">
-        <div class="small-3 large-2 columns">
+        <div class="small-2 large-1 columns">
             <span class="prefix">Email</span>
         </div>
-        <div class="small-9 large-8 columns">
-            <input type="text" placeholder="Escriba su dirección de correo electrónico" name="email" id="email"/>
+        <div class="small-10 large-6 columns">
+            <input type="email" placeholder="Escriba su dirección de correo electrónico" name="email" id="email"/>
         </div>
-        <div class="large-2 columns">&nbsp;</div>
+        <div class="large-5 columns">&nbsp;</div>
+    </div>
+
+    <div class="row collapse">
+        <div class="small-2 large-1 columns">
+            <span class="prefix">Teléfono principal</span>
+        </div>
+        <div class="small-2 large-2 columns">
+            <input type="text" placeholder="Teléfono fijo o celular" name="telefono_p" id="telefono_p" required pattern="[1-0]+/"><small class="error">Name is required and must be a string.</small>
+        </div>
+
+        <div class="small-2 large-1 columns">&nbsp;</div>
+
+        <div class="small-2 large-1 columns">
+            <span class="prefix">Teléfono alterno</span>
+        </div>
+        <div class="small-2 large-2 columns">
+            <input type="text" placeholder="Teléfono alterno" name="telefono_a" id="telefono_a" required pattern="[1-0]+"/>
+        </div>
+
+        <div class="large-5 columns">&nbsp;</div>
     </div>
 
     <div class="row">
