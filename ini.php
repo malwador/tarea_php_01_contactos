@@ -52,7 +52,7 @@ $lista_personas = Capsule::table('personas')->get();
 
 ?>
 
-<h1>Tarea PHP 01 - Gestión de contactos</h1>
+<h1 xmlns="http://www.w3.org/1999/html">Tarea PHP 01 - Gestión de contactos</h1>
 
 <?php
     if(!count($lista_personas)){
@@ -88,34 +88,41 @@ $lista_personas = Capsule::table('personas')->get();
         ?>
 <hr>
 <h3>Agregar contactos <i class="fa fa-user"></i></h3>
-<form action="ini.php" method="post">
+<form action="ini.php" method="post" data-abide>
 
     <div class="row collapse">
         <div class="small-3 large-2 columns">
-            <span class="prefix">Nombres</span>
+            <span class="prefix">Nombres&nbsp;&nbsp;</span>
+
         </div>
-        <div class="small-9 large-10 columns">
-            <input type="text" placeholder="Escriba sólo sus nombres" name="nombres" id="nombres"/>
+        <div class="small-9 large-8 columns">
+            <input type="text" placeholder="Escriba sólo sus nombres" name="nombres" id="nombres" required pattern="[a-zA-Z]+"/>
         </div>
+        <div class="large-2 columns">&nbsp;</div>
     </div>
 
     <div class="row collapse">
         <div class="small-3 large-2 columns">
             <span class="prefix">Apellidos</span>
         </div>
-        <div class="small-9 large-10 columns">
-            <input type="text" placeholder="Escriba sus apellidos" name="apellidos" id="apellidos"/>
+        <div class="small-9 large-8 columns">
+            <input type="text" placeholder="Escriba sus apellidos" name="apellidos" id="apellidos" required pattern="[a-zA-Z]+"/>
         </div>
+        <div class="large-2 columns">&nbsp;</div>
+    </div>
 
-        <div class="row collapse">
-            <div class="small-3 large-2 columns">
-                <span class="prefix">Email</span>
-            </div>
-            <div class="small-9 large-10 columns">
-                <input type="text" placeholder="Escriba su dirección de correo electrónico" name="email" id="email"/>
-            </div>
+    <div class="row collapse">
+        <div class="small-3 large-2 columns">
+            <span class="prefix">Email</span>
+        </div>
+        <div class="small-9 large-8 columns">
+            <input type="text" placeholder="Escriba su dirección de correo electrónico" name="email" id="email"/>
+        </div>
+        <div class="large-2 columns">&nbsp;</div>
+    </div>
 
-        <div class="large-5 columns">
+    <div class="row">
+        <div class="large-3 columns">
             <label>Genero
                 <select name="genero" id="genero">
                     <option value="Masculino">Masculino</option>
@@ -123,8 +130,8 @@ $lista_personas = Capsule::table('personas')->get();
                 </select>
             </label>
         </div>
-        <div class="large-2 columns">&nbsp;</div>
-        <div class="large-5 columns">
+        <div class="large-1 columns">&nbsp;</div>
+        <div class="large-3 columns">
         <label>Departamento
                 <select name="departamento" id="departamento">
                     <option value="Managua">Managua</option>
@@ -144,8 +151,14 @@ $lista_personas = Capsule::table('personas')->get();
                 </select>
             </label>
         </div>
+        <div class="large-5 columns">&nbsp;</div>
+    </div>
+
+    <div class="row">
+        <div class="large-8 columns">
             <input class="button small large-3" type="submit" value="Agregar">
         </div>
+        <div class="large-4 columns">&nbsp;</div>
     </div>
 </form>
 <?php
