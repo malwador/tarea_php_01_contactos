@@ -106,7 +106,16 @@ $lista_personas = Capsule::table('personas')->get();
         <div class="small-9 large-10 columns">
             <input type="text" placeholder="Escriba sus apellidos" name="apellidos" id="apellidos"/>
         </div>
-        <div class="large-4 columns">
+
+        <div class="row collapse">
+            <div class="small-3 large-2 columns">
+                <span class="prefix">Email</span>
+            </div>
+            <div class="small-9 large-10 columns">
+                <input type="text" placeholder="Escriba su dirección de correo electrónico" name="email" id="email"/>
+            </div>
+
+        <div class="large-5 columns">
             <label>Genero
                 <select name="genero" id="genero">
                     <option value="Masculino">Masculino</option>
@@ -114,8 +123,8 @@ $lista_personas = Capsule::table('personas')->get();
                 </select>
             </label>
         </div>
-        <div class="large-4 columns">&nbsp;</div>
-        <div class="large-4 columns">
+        <div class="large-2 columns">&nbsp;</div>
+        <div class="large-5 columns">
         <label>Departamento
                 <select name="departamento" id="departamento">
                     <option value="Managua">Managua</option>

@@ -15,7 +15,7 @@
     <!--    Seccion de los stylesheets-->
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/foundation.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/vendor/fortawesome/font-awesome/css/font-awesome.css" rel="stylesheet">
 
 
     <!--    Seccion de los scripts-->
