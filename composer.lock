@@ -3,11 +3,59 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8f200ab408fcdb59e824af8d8427afd4",
+    "hash": "4123216d51ede01e31d634677304fb0a",
     "packages": [
         {
+            "name": "fortawesome/font-awesome",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "2649d91d18629bab071449b3bc4cb02761037a57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/2649d91d18629bab071449b3bc4cb02761037a57",
+                "reference": "2649d91d18629bab071449b3bc4cb02761037a57",
+                "shasum": ""
+            },
+            "require-dev": {
+                "jekyll": "1.0.2",
+                "lessc": "1.4.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OFL-1.1",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Gandy",
+                    "email": "dave@fontawesome.io",
+                    "homepage": "http://twitter.com/davegandy",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The iconic font and CSS framework",
+            "homepage": "http://fontawesome.io/",
+            "keywords": [
+                "FontAwesome",
+                "awesome",
+                "bootstrap",
+                "font",
+                "icon"
+            ],
+            "time": "2014-05-14 20:37:30"
+        },
+        {
             "name": "illuminate/container",
-            "version": "v4.2.2",
+            "version": "v4.2.3",
             "target-dir": "Illuminate/Container",
             "source": {
                 "type": "git",
@@ -110,7 +158,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v4.2.2",
+            "version": "v4.2.3",
             "target-dir": "Illuminate/Events",
             "source": {
                 "type": "git",

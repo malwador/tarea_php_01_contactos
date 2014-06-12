@@ -87,23 +87,36 @@ $lista_personas = Capsule::table('personas')->get();
         }
         ?>
 <hr>
-<h3>Agregar contactos</h3>
+<h3>Agregar contactos <i class="fa fa-user"></i></h3>
 <form action="ini.php" method="post">
-    <div class="row">
-        <div class="large-12 columns">
-            <label>Nombres
-                <input type="text" placeholder="Escriba sólo sus nombres" name="nombres" id="nombres"/>
-            </label>
-            <label>Apellidos
-                <input type="text" placeholder="Escriba sus apellidos" name="apellidos" id="apellidos"/>
-            </label>
+
+    <div class="row collapse">
+        <div class="small-3 large-2 columns">
+            <span class="prefix">Nombres</span>
+        </div>
+        <div class="small-9 large-10 columns">
+            <input type="text" placeholder="Escriba sólo sus nombres" name="nombres" id="nombres"/>
+        </div>
+    </div>
+
+    <div class="row collapse">
+        <div class="small-3 large-2 columns">
+            <span class="prefix">Apellidos</span>
+        </div>
+        <div class="small-9 large-10 columns">
+            <input type="text" placeholder="Escriba sus apellidos" name="apellidos" id="apellidos"/>
+        </div>
+        <div class="large-4 columns">
             <label>Genero
                 <select name="genero" id="genero">
                     <option value="Masculino">Masculino</option>
                     <option value="Femenino">Femenino</option>
                 </select>
             </label>
-            <label>Departamento
+        </div>
+        <div class="large-4 columns">&nbsp;</div>
+        <div class="large-4 columns">
+        <label>Departamento
                 <select name="departamento" id="departamento">
                     <option value="Managua">Managua</option>
                     <option value="Masaya">Masaya</option>
@@ -121,9 +134,10 @@ $lista_personas = Capsule::table('personas')->get();
                     <option value="RAAS">RAAS</option>
                 </select>
             </label>
-            <input class="button small large-12" type="submit" value="Agregar">
+        </div>
+            <input class="button small large-3" type="submit" value="Agregar">
         </div>
     </div>
-
+</form>
 <?php
 require_once 'includes/footer.php';

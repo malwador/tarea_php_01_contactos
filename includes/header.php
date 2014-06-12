@@ -15,6 +15,7 @@
     <!--    Seccion de los stylesheets-->
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/foundation.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
     <!--    Seccion de los scripts-->
@@ -37,8 +38,8 @@
                 <!-- Right Nav Section -->
                 <ul class="right">
                     <li class="active"><a href="#">Inicio</a></li>
-                    <li><a href="#">Listado</a></li>
-                    <li><a href="#">Agregar contactos</a></li>
+                    <li><a href="#"><i class="fa fa-users"></i> Listado</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i> Agregar contactos</a></li>
                 </ul>
 
             </section>

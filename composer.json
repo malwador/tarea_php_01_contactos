@@ -1,7 +1,9 @@
 {
     "require": {
         "phpmailer/phpmailer": "dev-master",
-        "illuminate/database": "4.2.2"
+        "illuminate/database": "4.2.2",
+        "FortAwesome/Font-Awesome": "*"
+
     },
     "autoload": {
         "files": [

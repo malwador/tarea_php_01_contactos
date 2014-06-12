@@ -48,98 +48,6 @@
         ]
     },
     {
-        "name": "illuminate/container",
-        "version": "v4.2.2",
-        "version_normalized": "4.2.2.0",
-        "target-dir": "Illuminate/Container",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/illuminate/container.git",
-            "reference": "15d85ddb8b56fef54db5941c9b112cae069606ae"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/illuminate/container/zipball/15d85ddb8b56fef54db5941c9b112cae069606ae",
-            "reference": "15d85ddb8b56fef54db5941c9b112cae069606ae",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.0"
-        },
-        "time": "2014-05-23 16:40:19",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "4.2-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Container": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com",
-                "homepage": "https://github.com/taylorotwell",
-                "role": "Creator of Laravel"
-            }
-        ]
-    },
-    {
-        "name": "illuminate/events",
-        "version": "v4.2.2",
-        "version_normalized": "4.2.2.0",
-        "target-dir": "Illuminate/Events",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/illuminate/events.git",
-            "reference": "c95614873f4e437ed7a723c1734197b51feaf991"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/illuminate/events/zipball/c95614873f4e437ed7a723c1734197b51feaf991",
-            "reference": "c95614873f4e437ed7a723c1734197b51feaf991",
-            "shasum": ""
-        },
-        "require": {
-            "illuminate/container": "4.2.*",
-            "illuminate/support": "4.2.*",
-            "php": ">=5.4.0"
-        },
-        "time": "2014-06-06 13:58:46",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "4.2-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Events": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com",
-                "homepage": "https://github.com/taylorotwell",
-                "role": "Creator of Laravel"
-            }
-        ]
-    },
-    {
         "name": "illuminate/database",
         "version": "v4.2.2",
         "version_normalized": "4.2.2.0",
@@ -307,5 +215,147 @@
             }
         ],
         "description": "PHPMailer is a full-featured email creation and transfer class for PHP"
+    },
+    {
+        "name": "illuminate/container",
+        "version": "v4.2.3",
+        "version_normalized": "4.2.3.0",
+        "target-dir": "Illuminate/Container",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/illuminate/container.git",
+            "reference": "15d85ddb8b56fef54db5941c9b112cae069606ae"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/illuminate/container/zipball/15d85ddb8b56fef54db5941c9b112cae069606ae",
+            "reference": "15d85ddb8b56fef54db5941c9b112cae069606ae",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2014-05-23 16:40:19",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Container": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com",
+                "homepage": "https://github.com/taylorotwell",
+                "role": "Creator of Laravel"
+            }
+        ]
+    },
+    {
+        "name": "illuminate/events",
+        "version": "v4.2.3",
+        "version_normalized": "4.2.3.0",
+        "target-dir": "Illuminate/Events",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/illuminate/events.git",
+            "reference": "c95614873f4e437ed7a723c1734197b51feaf991"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/illuminate/events/zipball/c95614873f4e437ed7a723c1734197b51feaf991",
+            "reference": "c95614873f4e437ed7a723c1734197b51feaf991",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/container": "4.2.*",
+            "illuminate/support": "4.2.*",
+            "php": ">=5.4.0"
+        },
+        "time": "2014-06-06 13:58:46",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Events": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com",
+                "homepage": "https://github.com/taylorotwell",
+                "role": "Creator of Laravel"
+            }
+        ]
+    },
+    {
+        "name": "fortawesome/font-awesome",
+        "version": "4.1.0",
+        "version_normalized": "4.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FortAwesome/Font-Awesome.git",
+            "reference": "2649d91d18629bab071449b3bc4cb02761037a57"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/2649d91d18629bab071449b3bc4cb02761037a57",
+            "reference": "2649d91d18629bab071449b3bc4cb02761037a57",
+            "shasum": ""
+        },
+        "require-dev": {
+            "jekyll": "1.0.2",
+            "lessc": "1.4.2"
+        },
+        "time": "2014-05-14 20:37:30",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OFL-1.1",
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dave Gandy",
+                "email": "dave@fontawesome.io",
+                "homepage": "http://twitter.com/davegandy",
+                "role": "Developer"
+            }
+        ],
+        "description": "The iconic font and CSS framework",
+        "homepage": "http://fontawesome.io/",
+        "keywords": [
+            "FontAwesome",
+            "awesome",
+            "bootstrap",
+            "font",
+            "icon"
+        ]
     }
 ]
