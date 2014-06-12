@@ -37,10 +37,11 @@
             <section class="top-bar-section">
                 <!-- Right Nav Section -->
                 <ul class="right">
-                    <li class="active"><a href="#"><i class="fa fa-home fa-fw"></i>&nbsp;Inicio</a></li>
-                    <li><a href="#"><i class="fa fa-users fa-fw"></i>&nbsp;Listado</a></li>
-                    <li><a href="#"><i class="fa fa-user fa-fw"></i>&nbsp;Agregar contactos</a></li>
+                    <li class="active"><a href="/"><i class="fa fa-home fa-fw"></i>&nbsp;Inicio</a></li>
+                    <li><a href="ini.php?action=listar"><i class="fa fa-users fa-fw"></i>&nbsp;Listado</a></li>
+                    <li><a href="ini.php?action=agregar"><i class="fa fa-user fa-fw"></i>&nbsp;Agregar contactos</a></li>
                 </ul>
 
             </section>
         </nav>
+        </div>

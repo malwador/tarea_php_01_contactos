@@ -49,6 +49,13 @@ if (!empty($_POST))
         }
     }
 }
+
+    if (isset($_POST['action'])){
+        $action = $_POST['action'];
+    }
+
+
+
 // insertamos encabezado
 require 'includes/header.php';
 
@@ -58,33 +65,55 @@ $lista_personas = Capsule::table('personas')->get();
 //var_dump($lista_personas);
 
 ?>
-
-<h1 xmlns="http://www.w3.org/1999/html">Tarea PHP 01 - Gestión de contactos</h1>
+<div class="row">
+<h1>Tarea PHP 01 - Gestión de contactos</h1>
 
 <?php
+
+    switch($action){
+
+        case ($action="ver"):
+            echo "estamos usando ver";
+        break;
+
+        case "editar":
+        break;
+
+        case "listar":
+        break;
+
+        case "borrar":
+        break;
+
+        case "agregar";
+        break;
+
+        default:
+        break;
+    }
+
     if(!count($lista_personas)){
         echo "No hay contactos";
 } else {
 
 ?>
-<div class="row">
-    <h3>Contactos Existentes: <?php echo count($lista_personas); ?></h3>
-    <div class="large-3 columns">Nombres</div>
-    <div class="large-3 columns">Apellidos</div>
-    <div class="large-6 columns">Opciones</div>
-<!--    <div class="large-2 columns">Genero</div>-->
-<!--    <div class="large-2 columns">Departamento</div>-->
-<!--    <div class="large-2 columns">Comentarios</div>-->
-<!--    <div class="large-2 columns">Fecha creacion</div>-->
+        <h3>Contactos Existentes: <?php echo count($lista_personas); ?></h3>
+
+    <div class="row">
+        <div class="large-1 columns" style="color: white; background: #008cba; line-height: 2"><strong>Id</strong></div>
+        <div class="large-3 columns" style="color: white; background: #008cba; line-height: 2"><strong>Nombres</strong></div>
+        <div class="large-3 columns" style="color: white; background: #008cba; line-height: 2"><strong>Apellidos</strong></div>
+        <div class="large-5 columns" style="color: white; background: #008cba; line-height: 2"><strong>Opciones</strong></div>
 </div>
         <?php
             foreach($lista_personas as $p){
 
             ?>
             <div class="row">
-                <div class="large-3 columns"><?php echo $p['nombres'] ?></div>
-                <div class="large-3 columns"><?php echo $p['apellidos'] ?></div>
-                <div class="large-6 columns"><a href="#"> <i class="fa fa-user"></i> &nbsp;Ver</a> <a href="#"><span style="color: green"><i class="fa fa-pencil-square-o"></i></span> &nbsp;Editar</a> <a href="#"><span style="color: red"><i class="fa fa-eraser"></i></span> &nbsp;Borrar</a></div>
+                <div class="large-1 columns"><a href="ini.php?action=ver&id=<?php echo $p['id'] ?>"><?php echo $p['id'] ?></a></div>
+                <div class="large-3 columns"><a href="ini.php?action=ver&id=<?php echo $p['id'] ?>"><?php echo $p['nombres'] ?></div>
+                <div class="large-3 columns"><a href="ini.php?action=ver&id=<?php echo $p['id'] ?>"><?php echo $p['apellidos'] ?></div>
+                <div class="large-5 columns"><a href="#"> <i class="fa fa-user"></i> &nbsp;Ver</a> <a href="/?action=ver"><span style="color: green"><i class="fa fa-pencil-square-o"></i></span> &nbsp;Editar</a> <a href="#"><span style="color: red"><i class="fa fa-eraser"></i></span> &nbsp;Borrar</a></div>
 <!--                <div class="large-2 columns">--><?php //echo $p['genero'] ?><!--</div>-->
 <!--                <div class="large-2 columns">--><?php //echo $p['departamento'] ?><!--</div>-->
 <!--                <div class="large-2 columns">--><?php //echo $p['comentarios'] ?><!--</div>-->
@@ -93,6 +122,25 @@ $lista_personas = Capsule::table('personas')->get();
         <?php
 
                 }
+        ?>
+        <div class="row">
+            <div class="large-4 columns">&nbsp;</div>
+            <div class="large-4 columns">
+                <ul class="pagination">
+                  <li class="arrow unavailable"><a href="">&laquo;</a></li>
+                  <li class="current"><a href="">1</a></li>
+                  <li><a href="">2</a></li>
+                  <li><a href="">3</a></li>
+                  <li><a href="">4</a></li>
+                  <li class="unavailable"><a href="">&hellip;</a></li>
+                  <li><a href="">12</a></li>
+                  <li><a href="">13</a></li>
+                  <li class="arrow"><a href="">&raquo;</a></li>
+                </ul>
+            </div>
+            <div class="large-4 columns">&nbsp;</div>
+        </div>
+        <?php
         }
         ?>
 <hr>
