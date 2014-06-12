@@ -113,7 +113,8 @@ $lista_personas = Capsule::table('personas')->get();
                 <div class="large-1 columns"><a href="ini.php?action=ver&id=<?php echo $p['id'] ?>"><?php echo $p['id'] ?></a></div>
                 <div class="large-3 columns"><a href="ini.php?action=ver&id=<?php echo $p['id'] ?>"><?php echo $p['nombres'] ?></div>
                 <div class="large-3 columns"><a href="ini.php?action=ver&id=<?php echo $p['id'] ?>"><?php echo $p['apellidos'] ?></div>
-                <div class="large-5 columns"><a href="#"> <i class="fa fa-user"></i> &nbsp;Ver</a> <a href="/?action=ver"><span style="color: green"><i class="fa fa-pencil-square-o"></i></span> &nbsp;Editar</a> <a href="#"><span style="color: red"><i class="fa fa-eraser"></i></span> &nbsp;Borrar</a></div>
+<!--                <div class="large-5 columns"><a href="/?action=ver&id=--><?php //echo $p['id'] ?><!--"> <i class="fa fa-user"></i> &nbsp;Ver</a> <a href="/?action=editar&id=--><?php //echo $p['id'] ?><!--"><span style="color: green"><i class="fa fa-pencil-square-o"></i></span> &nbsp;Editar</a> <a href="/?action=borrar&id=--><?php //echo $p['id'] ?><!--"><span style="color: red"><i class="fa fa-eraser"></i></span> &nbsp;Borrar</a></div>-->
+                <div class="large-5 columns" style="line-height: 1.5"><a title="Editar" href="/?action=editar&id=<?php echo $p['id'] ?>"><span style="color: green"><i class="fa fa-pencil-square-o fa-lg"></i></span></a> <a title="borrar" href="/?action=borrar&id=<?php echo $p['id'] ?>"><span style="color: red"><i class="fa fa-eraser fa-lg"></i></span></a></div>
 <!--                <div class="large-2 columns">--><?php //echo $p['genero'] ?><!--</div>-->
 <!--                <div class="large-2 columns">--><?php //echo $p['departamento'] ?><!--</div>-->
 <!--                <div class="large-2 columns">--><?php //echo $p['comentarios'] ?><!--</div>-->
@@ -235,7 +236,7 @@ $lista_personas = Capsule::table('personas')->get();
 
     <div class="row">
         <div class="large-8 columns">
-            <input class="button small large-3" type="submit" value="Agregar">
+            <input class="button small large-3" type="submit" value="Agregar &raquo;">
         </div>
         <div class="large-4 columns">&nbsp;</div>
     </div>
