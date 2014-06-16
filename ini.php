@@ -48,11 +48,12 @@ if (!empty($_POST))
 
         }
     }
-}
-
     if (isset($_POST['action'])){
         $action = $_POST['action'];
     }
+}
+
+
 
 
 
@@ -65,8 +66,10 @@ $lista_personas = Capsule::table('personas')->get();
 //var_dump($lista_personas);
 
 ?>
-<div class="row">
-<h1>Tarea PHP 01 - Gestión de contactos</h1>
+<div class="row white">
+    <div class="large-1 columns">&nbsp;</div>
+    <div class="large-10 columns">
+        <h1>Tarea PHP 01 - Gestión de contactos</h1>
 
 <?php
 
@@ -99,31 +102,44 @@ $lista_personas = Capsule::table('personas')->get();
 ?>
         <h3>Contactos Existentes: <?php echo count($lista_personas); ?></h3>
 
-    <div class="row">
-        <div class="large-1 columns" style="color: white; background: #008cba; line-height: 2"><strong>Id</strong></div>
-        <div class="large-3 columns" style="color: white; background: #008cba; line-height: 2"><strong>Nombres</strong></div>
-        <div class="large-3 columns" style="color: white; background: #008cba; line-height: 2"><strong>Apellidos</strong></div>
-        <div class="large-5 columns" style="color: white; background: #008cba; line-height: 2"><strong>Opciones</strong></div>
-</div>
+
+
+
+<!--    <div class="row">-->
+<!--        <div class="large-1 columns" style="color: white; background: #008cba; line-height: 2"><strong>Id</strong></div>-->
+<!--        <div class="large-3 columns" style="color: white; background: #008cba; line-height: 2"><strong>Nombres</strong></div>-->
+<!--        <div class="large-3 columns" style="color: white; background: #008cba; line-height: 2"><strong>Apellidos</strong></div>-->
+<!--        <div class="large-5 columns" style="color: white; background: #008cba; line-height: 2"><strong>Opciones</strong></div>-->
+<!--    </div>-->
+
+    <table>
+    <tr>
+        <th>Id</th>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Opciones</th>
+    </tr>
         <?php
             foreach($lista_personas as $p){
 
             ?>
-            <div class="row">
-                <div class="large-1 columns"><a href="ini.php?action=ver&id=<?php echo $p['id'] ?>"><?php echo $p['id'] ?></a></div>
-                <div class="large-3 columns"><a href="ini.php?action=ver&id=<?php echo $p['id'] ?>"><?php echo $p['nombres'] ?></div>
-                <div class="large-3 columns"><a href="ini.php?action=ver&id=<?php echo $p['id'] ?>"><?php echo $p['apellidos'] ?></div>
-<!--                <div class="large-5 columns"><a href="/?action=ver&id=--><?php //echo $p['id'] ?><!--"> <i class="fa fa-user"></i> &nbsp;Ver</a> <a href="/?action=editar&id=--><?php //echo $p['id'] ?><!--"><span style="color: green"><i class="fa fa-pencil-square-o"></i></span> &nbsp;Editar</a> <a href="/?action=borrar&id=--><?php //echo $p['id'] ?><!--"><span style="color: red"><i class="fa fa-eraser"></i></span> &nbsp;Borrar</a></div>-->
-                <div class="large-5 columns" style="line-height: 1.5"><a title="Editar" href="/?action=editar&id=<?php echo $p['id'] ?>"><span style="color: green"><i class="fa fa-pencil-square-o fa-lg"></i></span></a> <a title="borrar" href="/?action=borrar&id=<?php echo $p['id'] ?>"><span style="color: red"><i class="fa fa-eraser fa-lg"></i></span></a></div>
-<!--                <div class="large-2 columns">--><?php //echo $p['genero'] ?><!--</div>-->
-<!--                <div class="large-2 columns">--><?php //echo $p['departamento'] ?><!--</div>-->
-<!--                <div class="large-2 columns">--><?php //echo $p['comentarios'] ?><!--</div>-->
-<!--                <div class="large-2 columns">--><?php //echo $p['fecha_creacion'] ?><!--</div>-->
-            </div>
+                <tr>
+                    <td><a href="ini.php?action=ver&id=<?php echo $p['id'] ?>"><?php echo $p['id'] ?></a></td>
+                    <td><a href="ini.php?action=ver&id=<?php echo $p['id'] ?>"><?php echo $p['nombres'] ?></td>
+                    <td><a href="ini.php?action=ver&id=<?php echo $p['id'] ?>"><?php echo $p['apellidos'] ?></td>
+                    <td><a title="Editar" href="/?action=editar&id=<?php echo $p['id'] ?>"><span style="color: green"><i class="fa fa-pencil-square-o fa-lg"></i></span></a> <a title="borrar" href="/?action=borrar&id=<?php echo $p['id'] ?>"><span style="color: red"><i class="fa fa-eraser fa-lg"></i></span></a></td>
+
+                </tr>
+
+
+
         <?php
 
                 }
         ?>
+
+        </table>
+
         <div class="row">
             <div class="large-4 columns">&nbsp;</div>
             <div class="large-4 columns">
@@ -241,5 +257,9 @@ $lista_personas = Capsule::table('personas')->get();
         <div class="large-4 columns">&nbsp;</div>
     </div>
 </form>
+
+    </div>
+    <div class="large-1 columns"></div>
+
 <?php
 require_once 'includes/footer.php';

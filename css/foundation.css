@@ -40,6 +40,7 @@ body {
 
 body {
   background: white;
+  background-image: url('/img/bg/office-bg.jpg');
   color: #222222;
   padding: 0;
   margin: 0;
@@ -5262,6 +5263,9 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
+.white {
+    background: white;
+}
 /*.probando {*/
     /*background: url(/img/bg/brick-wall.jpg) no-repeat center center fixed;*/
     /*-webkit-background-size: cover;*/
